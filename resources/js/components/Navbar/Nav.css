@@ -1,0 +1,103 @@
+/********** header **************/
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:white;
+    padding:10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 60px;
+}
+
+header .logo{
+    text-decoration: none;
+}
+
+header .logo img{
+    width: 130px;
+    height: 60px;
+}
+
+header .navbar a{
+    font-size: 17px;
+    padding:0 1.5rem;
+    transition: all 0.4s ease-in-out;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: #be2edd;
+    font-size: 19px;
+}
+
+header .icons a{
+    text-decoration: none;
+    font-size: 22.4px;
+    color: #be2edd;
+    margin-left: 1.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+header .icons a:hover{
+    transform: scale(1.1);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 20px;
+    color:rgb(170, 170, 170);
+    border-radius: .5rem;
+    padding:5px 10px;
+    cursor: pointer;
+    border:2px solid rgb(170, 170, 170);
+    display: none;
+}
+/********** end header **************/
+@media (max-width:1042px){
+    header .navbar a{
+        padding:0 1rem;
+    }
+}
+@media (max-width:962px){
+    header{
+        padding: 10px 50px;
+    }
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        height: 270px;
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:white;
+        display: flex;
+        flex-direction: column;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        width: 100%;
+        margin:5px 0px;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgb(170, 170, 170);
+        
+        text-align: center;
+        color: rgb(170, 170, 170);
+    }
+    header .navbar a:last-child{
+        border-bottom: none;
+    }
+}

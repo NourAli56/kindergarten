@@ -1,0 +1,40 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin-top: 0px;
+    width: 100%;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+}
+.all img{
+    height: 350px;
+}
+.all p{
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+    width: 80%;
+}
+.about_title{
+    font-weight: 400;
+    color: #be2edd;
+}
+.both{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 980px) {
+    .all{
+        flex-direction: column;
+        margin-left: 9%;
+    }
+    .all img{
+        width: 80%;
+        height: 300px;
+    }
+}

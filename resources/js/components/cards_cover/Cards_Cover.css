@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card{
+    background-color: white;
+    margin-top: -50px;
+    width: 300px;
+    padding: 15px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 7px rgb(207, 207, 207); 
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    margin-top: -60px;
+    box-shadow: 0px 10px 20px rgb(179, 179, 179); 
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inner i{
+    margin-right: 28px;
+    font-size: 25px;
+    padding: 15px 17px;
+    color: white;
+    border-radius: 50%;
+}
+.blue{
+    background-color: rgb(48, 78, 143);
+}
+.green{
+    background-color: teal;
+}
+.purpel{
+    background-color: #8e1ea7;
+}
+.inner p{
+    width: 200px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
+}
+.cards_link{
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1148px) {
+    .cards{
+        margin-left: 12px;
+    }
+    .card{
+        width: 270px;
+        margin-right: 25px;
+        margin-bottom: 80px;
+    }
+    .card:last-child{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .card{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 747px) {
+    .card{
+        width: 350px;
+    }
+}
